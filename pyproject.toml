@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hexlet-py-trials"
+version = "0.1.0"
+description = "My solution for Hexlet trials from Python Developer Course"
+authors = ["Viktor Sklyuev <sklyevv@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "hexlet_py_trials"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.scripts]
+start-trials = "hexlet_py_trials.scripts.main:main"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+flake8 = "^7.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
